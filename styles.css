@@ -1,0 +1,271 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #AF461B;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+/*==NAV BAR==*/
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #0B0504;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%
+}
+
+.Section1 {
+  background-image: url("Images/dark-red-blurry-triangle-pattern-vector.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.Section1 h2 {
+  font-size: 36px;
+}
+
+.Section1 p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #d00;
+  color: #fff;
+}
+
+.Section2 {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #6E4C3C;
+}
+
+.Section2 h2 {
+  font-size: 24px;
+}
+image1 {
+  border-radius: 20px;;
+  margin-right: 400px;
+}
+
+/*==Services==*/
+.service-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.service {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  float: left;
+}
+
+.description {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.code {
+  font-weight: bold;
+}
+
+/*==Testimonials==*/
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-rating {
+  font-size: 24px;
+  color: #ffd700; /* Yellow color for stars */
+}
+
+.testimonial-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-style: italic;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*==FOOTER==*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .socialIcons a i{
+    font-size: 2em;
+    color: #333;
+    opacity: 0.9;
+  }
+  /*==Hover Effect on Icons==*/
+  .socialIcons a:hover {
+    background-color:  #AF461B;
+    transition: 0.5s;
+  }
+  .socialIcons a:hover i{
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  a {
+    color: #AF461B;
+  }
+
+  a:hover {
+    color: #f00;
+  }
+
+/*===FORM===*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
